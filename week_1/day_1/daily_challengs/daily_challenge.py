@@ -21,5 +21,5 @@ if word:
         result += char
 else:
   result = ""
-print("empty input", result)
+print("The new word is: ", result)
 
