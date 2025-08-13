@@ -1,10 +1,5 @@
 # ------ Exercise 1
-
-print("hello world")
-print("hello world")
-print("hello world")
-print("hello world")
-
+for i in range(4): print("Hello World") 
 # ------ Exercise 2
 
 result = (99 ** 3) * 8
@@ -45,7 +40,7 @@ print(conc)
 
 # ------ Exercise 6
 
-#(yes because it is a inmutable)
+#(no because it is a inmutable)
 
 # ------ Exercise 7
 
