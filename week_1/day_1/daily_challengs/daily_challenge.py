@@ -14,12 +14,11 @@ print(list)
 
 word = input("Enter a word: ")
 
-if word:
-   result = word[0]
-   for char in word[1:len(word)]:
-      if char != result[-1]:
-        result += char
-else:
-  result = ""
+
+result = word[0] if word else ""
+for char in word[1:len(word)]:
+    if char != result[-1]:
+     result += char
+
 print("The new word is: ", result)
 
