@@ -1,0 +1,25 @@
+class Farm :
+  def __init__(self, farm_name):
+    self.farm_name = farm_name
+    self.animals = {}
+    self.animal_count = 0
+  def add_animal(self, animal_type, animal_count) :
+      if animal_type in self.animals:
+         self.animals[animal_type] += animal_count
+      else:
+         self.animals[animal_type] = animal_count
+      self.animal_count += animal_count
+  def get_info(self):
+        result = f"{self.farm_name}'s farm\n"
+
+        for animal, count in self.animals.items():
+            result += f"{animal:} : {count}\n"
+        result += "\n    E-I-E-I-0!"
+        return result
+
+youness_farm = Farm("youness farm")  
+youness_farm.add_animal("cow", 5)
+youness_farm.add_animal("sheep", 10)
+youness_farm.add_animal("goat", 3)
+
+print(youness_farm.get_info())
