@@ -1,4 +1,4 @@
-elect * from students;
+select * from students;
 
 select first_name, last_name from students;
 

@@ -1,15 +1,7 @@
-select * from film;
+SELECT * 
+FROM rental 
+WHERE return_date IS NULL;
 
--- 1
-
-SELECT 
-    r.rental_id,
-    f.title,
-	f.rental_duration,
-    (r.return_date - r.rental_date) AS rental_out
-FROM rental r
-INNER JOIN inventory i ON i.inventory_id = r.inventory_id
-INNER JOIN film f ON f.film_id = i.film_id;
 
 
 
